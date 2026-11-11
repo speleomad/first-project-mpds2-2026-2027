@@ -26,7 +26,11 @@ onAddComment(){
      message:this.comment.message 
   })
   console.log( this.comments) */
-  this.aboutService.addComment(this.comment)
+  this.aboutService.addComment({
+     id:this.comment.id,
+     date:this.comment.date,
+     message:this.comment.message 
+  })
 }
 
 }
