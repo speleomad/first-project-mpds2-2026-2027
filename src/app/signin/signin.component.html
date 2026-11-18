@@ -1,1 +1,14 @@
-<p>signin works!</p>
+<div>
+    <button class="btn btn-success mb-3" 
+            [disabled]="isAuth"
+            (click)="onSignIn()">
+        SignIn
+    </button>
+</div>
+<div>
+    <button class="btn btn-danger" 
+            [disabled]="!isAuth"
+            (click)="onSignOut()">
+        SignOut
+    </button>
+</div>
